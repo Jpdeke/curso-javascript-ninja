@@ -2,17 +2,19 @@
 Crie uma variável qualquer, que receba um array com alguns valores aleatórios
 - ao menos 5 - (fica por sua conta os valores do array).
 */
-// ?
+var arr = ['joao', 1 , 3 , 5 , true];
 
 /*
 Crie uma função que receba um array como parâmetro, e retorne esse array.
 */
-// ?
+function myFunction1 (arg){
+    return arg;
+}
 
 /*
 Imprima o segundo índice do array retornado pela função criada acima.
 */
-// ?
+myFunction1(arr)[1];
 
 /*
 Crie uma função que receba dois parâmetros: o primeiro, um array de valores; e o
@@ -20,19 +22,20 @@ segundo, um número. A função deve retornar o valor de um índice do array que
 no primeiro parâmetro. O índice usado para retornar o valor, deve ser o número passado no
 segundo parâmetro.
 */
-// ?
+function myFunction2 (arg , x) {
+    return (arg[x]);
+}
 
 /*
 Declare uma variável que recebe um array com 5 valores, de tipos diferentes.
 */
-// ?
+var arr1 = [ 'pedro', 1 , true , 0, null];
 
 /*
 Invoque a função criada acima, fazendo-a retornar todos os valores do último
 array criado.
 */
-// ?
-
+myFunction1(arr1); //(5) ["pedro", 1, true, 0, null]
 /*
 Crie uma função chamada `book`, que recebe um parâmetro, que será o nome do
 livro. Dentro dessa função, declare uma variável que recebe um objeto com as
@@ -47,7 +50,33 @@ propriedades:
 - Se o parâmetro não for passado, a função deve retornar o objeto com todos
 os livros.
 */
-// ?
+function book (parmet) {
+     let books = {
+        livro1:{
+            quantidadePaginas: 0,
+            autor: '',
+            editora: ''                        
+        },
+        livro2: {
+            quantidadePaginas:0 ,
+            autor: '',
+            editora: '' 
+        },
+        livro3: {
+            quantidadePaginas:0 ,
+            autor: '',
+            editora: '' 
+        }          
+    };
+    books = parmet;
+
+
+    return parmet;
+
+
+
+
+}
 
 /*
 Usando a função criada acima, imprima o objeto com todos os livros.
